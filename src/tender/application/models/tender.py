@@ -66,19 +66,19 @@ class Tender:
         end_at: Maybe[date | None],
     ) -> None:
         if job_type.is_set:
-            self.job_type = job_type
+            self.job_type = job_type.value
         if name.is_set:
-            self.name = name
+            self.name = name.value
         if description.is_set:
-            self.description = description
+            self.description = description.value
         if min_price.is_set:
-            self.min_price = min_price
+            self.min_price = min_price.value
         if max_price.is_set:
             self.max_price
         if start_at.is_set:
-            self.start_at = start_at
+            self.start_at = start_at.value
         if end_at.is_set:
-            self.end_at = end_at
+            self.end_at = end_at.value
 
     def close(self) -> None:
         self.tender_status = TenderStatus.CLOSED

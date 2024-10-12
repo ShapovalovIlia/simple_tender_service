@@ -23,13 +23,10 @@ class Review:
     def update(
         self,
         *,
-        bid_id: Maybe[UUID],
         description: Maybe[str],
-        rating: Maybe[str],
+        rating: Maybe[int],
     ) -> None:
-        if bid_id.is_set:
-            self.bid_id = bid_id
         if description.is_set:
-            self.description = description
+            self.description = description.value
         if rating.is_set:
-            self.rating = rating
+            self.rating = rating.value

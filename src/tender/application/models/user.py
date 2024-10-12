@@ -36,8 +36,8 @@ class User:
         username: Maybe[str],
     ) -> None:
         if first_name.is_set:
-            self.first_name = first_name
+            self.first_name = first_name.value
         if last_name.is_set:
-            self.last_name = last_name
+            self.last_name = last_name.value
         if username.is_set:
-            self.username = username
+            self.username = username.value

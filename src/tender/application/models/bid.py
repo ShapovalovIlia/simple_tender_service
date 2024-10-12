@@ -2,7 +2,7 @@ from uuid import UUID
 from datetime import date
 
 from tender.application.constants import BidStatus
-from maybe import Maybe
+from tender.application.maybe import Maybe
 
 
 class Bid:

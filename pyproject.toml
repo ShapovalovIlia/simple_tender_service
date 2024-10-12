@@ -12,6 +12,7 @@ mypy = "^1.11.2"
 pre-commit = "^4.0.1"
 fastapi = "^0.115.0"
 uvicorn = "^0.31.1"
+uuid7 = "^0.1.0"
 
 
 [build-system]

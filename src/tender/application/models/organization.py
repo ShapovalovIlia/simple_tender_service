@@ -42,8 +42,8 @@ class Organization:
         organization_type: Maybe[OrganizationType],
     ) -> None:
         if name.is_set:
-            self.name = name
+            self.name = name.value
         if description.is_set:
-            self.description = description
+            self.description = description.value
         if organization_type.is_set:
-            self.organization_type = organization_type
+            self.organization_type = organization_type.value
