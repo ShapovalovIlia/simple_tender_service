@@ -8,4 +8,4 @@ from tender.application.maybe import Maybe
 class UpdateReviewCommand:
     id: UUID
     description: Maybe[str]
-    rating: Maybe[str]
+    rating: Maybe[int]
